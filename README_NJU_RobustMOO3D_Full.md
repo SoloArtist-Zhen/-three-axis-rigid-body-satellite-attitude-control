@@ -389,9 +389,6 @@ Bar plots are explicitly avoided to keep the visual style consistent with modern
 - `line_*.png` —— 线性与非线性系统的时间响应曲线；
 - `pole_*.png` —— 在不确定性条件下闭环极点云的复平面分布图。
 
-为了风格统一且更接近现代鲁棒控制文献，本项目不使用条形图，而是通过箱线图、热力图和散点图展示统计特征和结构信息。
-
----
 
 ### 6.2 3×3 Mosaics by Type
 
@@ -407,6 +404,12 @@ For each figure type, the first nine images are combined into a 3×3 mosaic usin
 Each mosaic contains nine figures of the same type, ensuring visual coherence and making it convenient to insert into slides or articles as a single high-level summary figure.
 
 对每一种图形类型，选取前 9 张单图，用 `scripts/compose_mosaic.py` 中的 `stitch_3x3` 拼接成 3×3 组合图：
+<img width="5667" height="4227" alt="mosaic_box_3x3" src="https://github.com/user-attachments/assets/a8f6ad09-289e-4dba-a338-88e36a7b4679" />
+<img width="5355" height="4227" alt="mosaic_heat_3x3" src="https://github.com/user-attachments/assets/80824012-d091-4b8c-9bca-490b9fd61808" />
+<img width="5667" height="4227" alt="mosaic_pole_3x3" src="https://github.com/user-attachments/assets/8f874b43-cf86-4cc6-8519-85c67a90f886" />
+<img width="5667" height="4227" alt="mosaic_scat_3x3" src="https://github.com/user-attachments/assets/38840a51-c51b-4f63-832b-5af942d26854" />
+<img width="5661" height="4227" alt="mosaic_hist_3x3" src="https://github.com/user-attachments/assets/714762d5-2eb4-46b5-8755-869e62f51c68" />
+
 
 - `mosaic_box_3x3.png`
 - `mosaic_hist_3x3.png`
@@ -414,5 +417,3 @@ Each mosaic contains nine figures of the same type, ensuring visual coherence an
 - `mosaic_heat_3x3.png`
 - `mosaic_line_3x3.png`
 - `mosaic_pole_3x3.png`
-
-每张 mosaic 图只包含同一类型的 9 张子图，便于在汇报 PPT 或论文中作为“一图多信息”的总览性展示。
